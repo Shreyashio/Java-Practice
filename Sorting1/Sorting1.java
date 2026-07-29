@@ -1,3 +1,4 @@
+package Sorting1;
 public class Sorting1 {
     
     public static void sortNumbers(int[] arr) {
@@ -6,7 +7,7 @@ public class Sorting1 {
         for(int i=0; i<n-1; i++) {
             int minIndex = i;
 
-            for(int j=0; j<n; j++) {
+            for(int j=i+1; j<n; j++) {
                 if(arr[j]<arr[minIndex]) {
                     minIndex = j;
                 }
